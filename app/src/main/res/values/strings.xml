@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">BOOK READER</string>
+    <string name="title_activity_intro">IntroActivity</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="nav_home">Home</string>
+    <string name="nav_bookmark">Bookmark</string>
+    <string name="nav_search">Search</string>
+    <string name="nav_history">History</string>
+    <string name="gwa_nav">과천 정보 과학 도서관</string>
+    <string name="gwa_nav2">과천 도립 도서관</string>
+    <string name="gwa_nav3">과천 중앙고</string>
+
+
+</resources>

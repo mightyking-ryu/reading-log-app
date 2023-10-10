@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="sort_menu">
+
+        <item>최신 날짜 순</item>
+        <item>오래된 날짜 순</item>
+        <item>책 제목 순</item>
+        <item>저자 이름 순</item>
+
+    </string-array>
+
+</resources>

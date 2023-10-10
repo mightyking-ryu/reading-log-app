@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="5dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/list_style"
+        android:padding="10dp"
+        android:orientation="horizontal">
+
+    <ImageView
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:src="@drawable/ic_closed_book"
+        android:id="@+id/img_contact"/>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_marginLeft="16dp"
+        android:layout_weight="1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:text="book title"
+            android:textColor="#ff000000"
+            android:id="@+id/history_bookinfo"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="author"
+            android:textStyle="bold"
+            android:maxLines="1"
+            android:id="@+id/history_bookinfo2"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="oooo년 oo월 oo일"
+            android:maxLines="1"
+            android:id="@+id/history_bookdate"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:gravity="end"
+        android:layout_gravity="right"
+        android:layout_width="100dp"
+        android:layout_height="match_parent">
+
+        <ImageButton
+            android:id="@+id/history_fix"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="25dp"
+            android:background="@drawable/list_style"
+            android:scaleType="fitCenter"
+            android:src="@drawable/ic_fix" />
+
+        <ImageButton
+            android:id="@+id/history_delete"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/list_style"
+            android:scaleType="fitCenter"
+            android:src="@drawable/ic_delete" />
+
+
+
+
+    </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

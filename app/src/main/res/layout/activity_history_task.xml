@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#efefef"
+    tools:context=".HistoryTask">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="198dp"
+        android:background="@drawable/bookmark_background">
+
+        <TextView
+            android:id="@+id/history_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="새로운 책 추가하기"
+            android:textColor="#ffffff"
+            android:textSize="22sp"
+            android:layout_marginBottom="25dp"
+            app:layout_constraintBottom_toTopOf="@+id/guideline2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="전에 읽었던 책을 기록하세요"
+            android:textColor="#ccffffff"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toTopOf="@+id/guideline2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/history_title" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.6" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <LinearLayout
+        android:layout_marginRight="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="-60dp"
+        android:orientation="vertical"
+        android:paddingBottom="22dp"
+        android:paddingTop="22dp"
+        android:background="@drawable/list_style"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/task_addtitle"
+                android:textColor="@color/dark_blue"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:text = "Book Title"
+                android:layout_marginBottom="10dp"/>
+
+            <EditText
+                android:paddingLeft="12dp"
+                android:id="@+id/task_booktitle"
+                android:inputType="text"
+                android:textColorHint="#B5B5B5"
+                android:textColor="@color/dark_blue"
+                android:background="@drawable/task_input"
+                android:hint="책의 제목 입력"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/task_addauthor"
+                android:textColor="@color/dark_blue"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:text = "Author"
+                android:layout_marginBottom="10dp"/>
+
+            <EditText
+                android:paddingLeft="12dp"
+                android:id="@+id/task_bookauthor"
+                android:inputType="text"
+                android:textColorHint="#B5B5B5"
+                android:textColor="@color/dark_blue"
+                android:background="@drawable/task_input"
+                android:hint="책의 저자 입력"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/task_adddate"
+                android:textColor="@color/dark_blue"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:text = "Date"
+                android:layout_marginBottom="10dp"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="55dp">
+
+            <Button
+                android:layout_marginRight="7dp"
+                android:layout_marginLeft="7dp"
+                android:paddingLeft="20dp"
+                android:textSize="17sp"
+                android:id="@+id/task_history_year"
+                android:textColorHint="#B5B5B5"
+                android:textColor="@color/dark_blue"
+                android:background="@drawable/task_input"
+                android:hint="    년"
+                android:layout_weight="1.3"
+                android:layout_width="0dp"
+                android:layout_height="55dp">
+
+
+            </Button>
+
+            <Button
+                android:layout_marginRight="7dp"
+                android:layout_marginLeft="7dp"
+                android:paddingLeft="12dp"
+                android:textSize="17sp"
+                android:id="@+id/task_history_month"
+                android:textColorHint="#B5B5B5"
+                android:textColor="@color/dark_blue"
+                android:background="@drawable/task_input"
+                android:hint="  월"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="55dp"/>
+            <Button
+                android:layout_marginRight="7dp"
+                android:layout_marginLeft="7dp"
+                android:paddingLeft="12dp"
+                android:textSize="17sp"
+                android:id="@+id/task_history_day"
+                android:textColorHint="#B5B5B5"
+                android:textColor="@color/dark_blue"
+                android:background="@drawable/task_input"
+                android:hint="  일"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="55dp"/>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="16dp"
+            android:orientation="horizontal">
+
+
+            <Button
+                android:id="@+id/btn_task_save"
+                android:layout_marginLeft="7dp"
+                android:layout_marginRight="15dp"
+                android:paddingRight="25dp"
+                android:textSize="17sp"
+                android:layout_width="0dp"
+                android:layout_height="55dp"
+                android:layout_weight="1"
+                android:background="@drawable/btn_save_input"
+                android:drawableRight="@drawable/ic_save"
+                android:text="저장"/>
+
+            <Button
+                android:id="@+id/btn_task_cancel"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="7dp"
+                android:paddingRight="25dp"
+                android:textSize="17sp"
+                android:layout_width="0dp"
+                android:layout_height="55dp"
+                android:layout_weight="1"
+                android:background="@drawable/btn_cancel_input"
+                android:drawableRight="@drawable/ic_cancel"
+                android:text="취소"/>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
